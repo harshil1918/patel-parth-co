@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Contact Form → Web3Forms (Email) + Google Sheets ---
     const contactForm = document.getElementById('contactForm');
-    const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE'; // Replace with your Web3Forms access key
+    const WEB3FORMS_KEY = 'cd316296-784a-464f-b123-0ba23fb8d53d';
     const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_SHEET_URL_HERE'; // Replace with your Google Apps Script URL
 
     if (contactForm) {
