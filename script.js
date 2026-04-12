@@ -11,19 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     setTimeout(() => preloader.classList.add('hidden'), 3000);
 
-    // --- Theme Toggle ---
-    const themeToggle = document.getElementById('themeToggle');
-    const html = document.documentElement;
-    const savedTheme = localStorage.getItem('ppco-theme') || 'light';
-    html.setAttribute('data-theme', savedTheme);
-
-    themeToggle.addEventListener('click', () => {
-        const current = html.getAttribute('data-theme');
-        const next = current === 'light' ? 'dark' : 'light';
-        html.setAttribute('data-theme', next);
-        localStorage.setItem('ppco-theme', next);
-    });
-
     // --- Cursor Glow ---
     const cursorGlow = document.getElementById('cursorGlow');
     if (window.matchMedia('(pointer: fine)').matches && cursorGlow) {
@@ -206,11 +193,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Contact Form → WhatsApp ---
+    // --- Contact Form → Web3Forms (Email) + Google Sheets ---
     const contactForm = document.getElementById('contactForm');
+    const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE'; // Replace with your Web3Forms access key
+    const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_SHEET_URL_HERE'; // Replace with your Google Apps Script URL
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function (e) {
+        contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
+
+            const btn = contactForm.querySelector('button[type="submit"]');
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+
             const fd = new FormData(this);
             const name = fd.get('name');
             const phone = fd.get('phone');
@@ -218,26 +214,55 @@ document.addEventListener('DOMContentLoaded', () => {
             const service = fd.get('service');
             const message = fd.get('message') || 'No message';
 
-            const waMsg = `Hello Patel Parth & Co!%0A%0A` +
-                `*Name:* ${name}%0A` +
-                `*Phone:* ${phone}%0A` +
-                `*Email:* ${email}%0A` +
-                `*Service:* ${service}%0A` +
-                `*Message:* ${message}`;
+            try {
+                // 1. Send email via Web3Forms
+                const emailData = {
+                    access_key: WEB3FORMS_KEY,
+                    subject: `New Enquiry from ${name} — Patel Parth & Co`,
+                    from_name: 'Patel Parth & Co Website',
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    service: service,
+                    message: message
+                };
 
-            window.open(`https://wa.me/918320525187?text=${waMsg}`, '_blank');
+                const emailPromise = fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(emailData)
+                });
 
-            const btn = contactForm.querySelector('button[type="submit"]');
-            const orig = btn.innerHTML;
-            btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
-            btn.style.background = '#25D366';
-            btn.disabled = true;
+                // 2. Save to Google Sheets
+                const sheetData = { name, phone, email, service, message, date: new Date().toLocaleString('en-IN') };
+
+                const sheetPromise = GOOGLE_SHEET_URL !== 'YOUR_GOOGLE_SHEET_URL_HERE'
+                    ? fetch(GOOGLE_SHEET_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(sheetData)
+                    })
+                    : Promise.resolve();
+
+                // Wait for both
+                await Promise.all([emailPromise, sheetPromise]);
+
+                // Success
+                btn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check-circle"></i>';
+                btn.style.background = '#22C55E';
+                contactForm.reset();
+
+            } catch (error) {
+                // Error
+                btn.innerHTML = '<span>Failed! Try Again</span> <i class="fas fa-exclamation-circle"></i>';
+                btn.style.background = '#EF4444';
+            }
 
             setTimeout(() => {
                 btn.innerHTML = orig;
                 btn.style.background = '';
                 btn.disabled = false;
-                contactForm.reset();
             }, 3000);
         });
     }
