@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patel Parth & Co | Chartered Accountants & Business Consultants</title>
+    <meta name="description" content="Patel Parth & Co offers expert GST, Income Tax, MSME, and DSC services. Trusted accounting and consulting firm dedicated to your financial growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-ring">
+            <div class="loader-inner"></div>
+            <span class="loader-text">PP&Co</span>
+        </div>
+    </div>
+
+    <!-- Cursor Glow (desktop only) -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-mark">
+                    <span>P</span>
+                    <span>P</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Patel Parth & Co</span>
+                    <span class="logo-sub">Chartered Accountants</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="tel:+918320525187" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <div class="hero-pill" data-animate="fade-up">
+                    <span class="pill-dot"></span>
+                    Trusted by 500+ Businesses
+                </div>
+                <h1 data-animate="fade-up" data-delay="100">
+                    Your Financial Growth is Our <span class="gradient-text">Priority</span>
+                </h1>
+                <p class="hero-sub" data-animate="fade-up" data-delay="200">
+                    Expert GST compliance, income tax planning, MSME registration & more — we handle the complexity so you can focus on building your business.
+                </p>
+                <div class="hero-btns" data-animate="fade-up" data-delay="300">
+                    <a href="#contact" class="btn btn-glow">
+                        Free Consultation
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn btn-ghost">
+                        Explore Services
+                    </a>
+                </div>
+                <div class="hero-trust" data-animate="fade-up" data-delay="400">
+                    <div class="trust-avatars">
+                        <div class="trust-avatar">RK</div>
+                        <div class="trust-avatar">PM</div>
+                        <div class="trust-avatar">AS</div>
+                        <div class="trust-avatar">+</div>
+                    </div>
+                    <div class="trust-text">
+                        <div class="trust-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span>4.9/5 from 500+ clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right" data-animate="fade-left" data-delay="200">
+                <div class="hero-dashboard">
+                    <div class="dash-header">
+                        <div class="dash-dots"><span></span><span></span><span></span></div>
+                        <span>Financial Overview</span>
+                    </div>
+                    <div class="dash-stats">
+                        <div class="dash-stat">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <div>
+                                <span class="dash-stat-num">10,000+</span>
+                                <span class="dash-stat-label">Returns Filed</span>
+                            </div>
+                        </div>
+                        <div class="dash-stat">
+                            <i class="fas fa-shield-halved"></i>
+                            <div>
+                                <span class="dash-stat-num">100%</span>
+                                <span class="dash-stat-label">Compliance Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash-chart">
+                        <div class="chart-bar" style="--h: 35%;" data-label="Jan"></div>
+                        <div class="chart-bar" style="--h: 55%;" data-label="Feb"></div>
+                        <div class="chart-bar" style="--h: 42%;" data-label="Mar"></div>
+                        <div class="chart-bar" style="--h: 70%;" data-label="Apr"></div>
+                        <div class="chart-bar" style="--h: 58%;" data-label="May"></div>
+                        <div class="chart-bar" style="--h: 85%;" data-label="Jun"></div>
+                        <div class="chart-bar" style="--h: 92%;" data-label="Jul"></div>
+                    </div>
+                    <div class="dash-footer">
+                        <span><i class="fas fa-check-circle"></i> On-time Filing</span>
+                        <span><i class="fas fa-check-circle"></i> Expert Verified</span>
+                    </div>
+                </div>
+                <!-- Floating badges -->
+                <div class="hero-float float-1">
+                    <i class="fas fa-chart-line"></i> Growth +47%
+                </div>
+                <div class="hero-float float-2">
+                    <i class="fas fa-clock"></i> 24hr Turnaround
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>GST Return Filing</span>
+                <span class="marquee-dot"></span>
+                <span>Income Tax</span>
+                <span class="marquee-dot"></span>
+                <span>MSME Registration</span>
+                <span class="marquee-dot"></span>
+                <span>Digital Signature</span>
+                <span class="marquee-dot"></span>
+                <span>Tax Notice Handling</span>
+                <span class="marquee-dot"></span>
+                <span>GST Registration</span>
+                <span class="marquee-dot"></span>
+                <span>Business Consulting</span>
+                <span class="marquee-dot"></span>
+                <span>GST Return Filing</span>
+                <span class="marquee-dot"></span>
+                <span>Income Tax</span>
+                <span class="marquee-dot"></span>
+                <span>MSME Registration</span>
+                <span class="marquee-dot"></span>
+                <span>Digital Signature</span>
+                <span class="marquee-dot"></span>
+                <span>Tax Notice Handling</span>
+                <span class="marquee-dot"></span>
+                <span>GST Registration</span>
+                <span class="marquee-dot"></span>
+                <span>Business Consulting</span>
+                <span class="marquee-dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-layout">
+                <div class="about-left" data-animate="fade-right">
+                    <div class="about-image-block">
+                        <div class="about-icon-box">
+                            <i class="fas fa-building-columns"></i>
+                        </div>
+                        <h3>Patel Parth & Co</h3>
+                        <p>Established with a vision to simplify financial compliance for businesses across India.</p>
+                        <div class="about-year-badge">
+                            <span class="year-num" data-count="5">0</span>
+                            <span class="year-label">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                    <div class="about-mini-cards">
+                        <div class="mini-card">
+                            <i class="fas fa-users"></i>
+                            <strong>500+</strong>
+                            <span>Clients</span>
+                        </div>
+                        <div class="mini-card">
+                            <i class="fas fa-file-alt"></i>
+                            <strong>10K+</strong>
+                            <span>Returns</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-right" data-animate="fade-left">
+                    <div class="tag-label">Who We Are</div>
+                    <h2 class="sec-heading">A Firm Built on <span class="gradient-text">Trust</span> & <span class="gradient-text">Expertise</span></h2>
+                    <p class="about-text">
+                        <strong>Patel Parth & Co</strong> is a professionally managed accounting and consulting firm committed to delivering accurate, timely, and reliable financial services. We understand that navigating the complexities of GST, income tax, and business compliance can be overwhelming — that's why we exist.
+                    </p>
+                    <p class="about-text">
+                        Our team of dedicated professionals brings deep knowledge of Indian tax laws and regulatory frameworks. Whether you're a startup seeking your first MSME registration or an established business needing comprehensive tax planning, we provide personalized solutions that drive real results.
+                    </p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-bullseye"></i></div>
+                            <div>
+                                <strong>Our Mission</strong>
+                                <p>To make financial compliance simple, accessible, and stress-free for every business owner.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <div class="value-icon"><i class="fas fa-eye"></i></div>
+                            <div>
+                                <strong>Our Vision</strong>
+                                <p>To be the most trusted financial partner for growing businesses across Gujarat and beyond.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-glow">
+                        Let's Work Together <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder section">
+        <div class="container">
+            <div class="section-intro" data-animate="fade-up">
+                <div class="tag-label">Meet Our Founder</div>
+                <h2 class="sec-heading">The Mind Behind <span class="gradient-text">Patel Parth & Co</span></h2>
+            </div>
+            <div class="founder-layout">
+                <div class="founder-photo-wrap" data-animate="fade-right">
+                    <div class="founder-photo">
+                        <!-- Replace src with actual photo later -->
+                        <img id="founderImg" src="" alt="CA Parth Patel" style="display:none;">
+                        <div class="founder-initials" id="founderInitials">PP</div>
+                    </div>
+                    <div class="founder-badge">
+                        <i class="fas fa-certificate"></i> Chartered Accountant
+                    </div>
+                </div>
+                <div class="founder-info" data-animate="fade-left">
+                    <h3>CA Parth Patel</h3>
+                    <span class="founder-role">Founder & Managing Partner</span>
+                    <p>CA Parth Patel is a qualified Chartered Accountant and the driving force behind Patel Parth & Co. With a strong foundation in accounting, taxation, and financial compliance, he established the firm with a singular vision — to make professional financial services accessible and stress-free for businesses of all sizes.</p>
+                    <p>With years of hands-on experience in GST compliance, income tax planning, MSME advisory, and handling complex tax notices, CA Parth has helped hundreds of businesses stay compliant while maximizing their financial potential. His client-first approach, sharp attention to detail, and deep understanding of Indian tax laws have earned him the trust of 500+ satisfied clients across Gujarat and beyond.</p>
+                    <div class="founder-highlights">
+                        <div class="founder-highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Qualified Chartered Accountant</span>
+                        </div>
+                        <div class="founder-highlight">
+                            <i class="fas fa-briefcase"></i>
+                            <span>5+ Years of Professional Experience</span>
+                        </div>
+                        <div class="founder-highlight">
+                            <i class="fas fa-users"></i>
+                            <span>Trusted by 500+ Businesses</span>
+                        </div>
+                        <div class="founder-highlight">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Serving Clients Across Gujarat & India</span>
+                        </div>
+                    </div>
+                    <div class="founder-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:patelparthandco@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:+918320525187" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-intro" data-animate="fade-up">
+                <div class="tag-label">What We Offer</div>
+                <h2 class="sec-heading">Comprehensive <span class="gradient-text">Financial Solutions</span></h2>
+                <p class="section-sub">From registration to returns, from compliance to consulting — we cover every aspect of your financial journey.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-number">01</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>GST Return Filing</h3>
+                    <p>Timely and accurate GST return filing — GSTR-1, GSTR-3B, GSTR-9, and more. Stay compliant, avoid penalties, and claim your rightful input tax credits.</p>
+                    <ul class="service-list">
+                        <li>Monthly & Quarterly Returns</li>
+                        <li>Annual Return (GSTR-9)</li>
+                        <li>ITC Reconciliation</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-registered"></i>
+                    </div>
+                    <h3>GST Registration</h3>
+                    <p>Hassle-free GST registration for new and existing businesses. We handle the entire process from document preparation to certificate issuance.</p>
+                    <ul class="service-list">
+                        <li>New Registration</li>
+                        <li>Amendment & Cancellation</li>
+                        <li>Migration Assistance</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>MSME Certificate</h3>
+                    <p>Get your Udyam Registration (MSME Certificate) quickly. Unlock government benefits, subsidies, and priority sector lending for your business.</p>
+                    <ul class="service-list">
+                        <li>Udyam Registration</li>
+                        <li>Government Benefits Access</li>
+                        <li>Priority Lending Support</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Income Tax Return</h3>
+                    <p>Expert income tax return filing for individuals, businesses, and professionals. Maximize deductions, minimize liability, and file with confidence.</p>
+                    <ul class="service-list">
+                        <li>Individual & Business ITR</li>
+                        <li>Tax Planning & Savings</li>
+                        <li>Advance Tax Computation</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="100">
+                    <div class="service-number">05</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Income Tax & GST Notice</h3>
+                    <p>Received a notice from the tax department? Don't worry. We handle all types of income tax and GST notices with expert representation and timely responses.</p>
+                    <ul class="service-list">
+                        <li>Notice Assessment & Reply</li>
+                        <li>Scrutiny Assistance</li>
+                        <li>Appellate Representation</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-animate="fade-up" data-delay="200">
+                    <div class="service-number">06</div>
+                    <div class="service-icon-wrap">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Digital Signature (DSC)</h3>
+                    <p>Class 2 & Class 3 Digital Signature Certificates for e-filing, e-tendering, and secure digital transactions. Quick issuance with full support.</p>
+                    <ul class="service-list">
+                        <li>Class 2 & Class 3 DSC</li>
+                        <li>Renewal & Revocation</li>
+                        <li>USB Token Setup</li>
+                    </ul>
+                    <a href="#contact" class="service-cta">Get Started <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Why Us -->
+    <section id="why-us" class="why-us section">
+        <div class="container">
+            <div class="section-intro" data-animate="fade-up">
+                <div class="tag-label">Why Choose Us</div>
+                <h2 class="sec-heading">Numbers That <span class="gradient-text">Speak Volumes</span></h2>
+            </div>
+            <div class="stats-row" data-animate="fade-up">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-num" data-count="500">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="stat-num" data-count="10000">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Returns Filed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-award"></i></div>
+                    <div class="stat-num" data-count="5">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+                    <div class="stat-num" data-count="99">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+            <div class="features-row">
+                <div class="feature-card" data-animate="fade-up" data-delay="0">
+                    <div class="feature-icon-wrap"><i class="fas fa-user-tie"></i></div>
+                    <h3>Expert Team</h3>
+                    <p>Qualified professionals with deep knowledge of Indian tax laws and compliance requirements.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="100">
+                    <div class="feature-icon-wrap"><i class="fas fa-bolt"></i></div>
+                    <h3>Quick Turnaround</h3>
+                    <p>Fast processing with strict adherence to deadlines. No last-minute rush, no missed due dates.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="200">
+                    <div class="feature-icon-wrap"><i class="fas fa-tags"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent and competitive pricing with no hidden charges. Quality services within your budget.</p>
+                </div>
+                <div class="feature-card" data-animate="fade-up" data-delay="300">
+                    <div class="feature-icon-wrap"><i class="fas fa-headset"></i></div>
+                    <h3>Dedicated Support</h3>
+                    <p>Personalized attention with a dedicated point of contact for all your queries and concerns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="section-intro" data-animate="fade-up">
+                <div class="tag-label">Testimonials</div>
+                <h2 class="sec-heading">What Our <span class="gradient-text">Clients Say</span></h2>
+            </div>
+            <div class="testimonial-slider" data-animate="fade-up">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Patel Parth & Co has been handling our GST returns for over 2 years now. Their accuracy and timeliness is unmatched. Highly recommended for any business owner!"</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">RK</div>
+                            <div>
+                                <strong>Rajesh Kumar</strong>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"I received an income tax notice and was very worried. The team at PP&Co handled it professionally and resolved the matter quickly. Very grateful for their expertise."</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">PM</div>
+                            <div>
+                                <strong>Priya Mehta</strong>
+                                <span>Freelancer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                        <div class="testi-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"From GST registration to MSME certificate — they took care of everything for my startup. Affordable pricing and excellent service. Couldn't ask for more!"</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar">AS</div>
+                            <div>
+                                <strong>Amit Shah</strong>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn" aria-label="Previous"><i class="fas fa-arrow-left"></i></button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="nextBtn" aria-label="Next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-box" data-animate="fade-up">
+                <div class="cta-content">
+                    <h2>Ready to Simplify Your Finances?</h2>
+                    <p>Book a free consultation today and let our experts guide you through your tax and compliance needs.</p>
+                </div>
+                <div class="cta-buttons">
+                    <a href="tel:+918320525187" class="btn btn-white">
+                        <i class="fas fa-phone-alt"></i> Call: +91 83205 25187
+                    </a>
+                    <a href="https://wa.me/918320525187" target="_blank" class="btn btn-wa">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-intro" data-animate="fade-up">
+                <div class="tag-label">Get In Touch</div>
+                <h2 class="sec-heading">Let's Start a <span class="gradient-text">Conversation</span></h2>
+                <p class="section-sub">Have a question or need assistance? Reach out to us — we're here to help.</p>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <a href="tel:+918320525187">+91 83205 25187</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <a href="mailto:patelparthandco@gmail.com">patelparthandco@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/918320525187" target="_blank">+91 83205 25187</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon - Sat: 10:00 AM - 7:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-animate="fade-left" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-field">
+                        <label for="service">Service Required</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a Service</option>
+                            <option value="gst-return">GST Return Filing</option>
+                            <option value="gst-registration">GST Registration</option>
+                            <option value="msme">MSME Certificate</option>
+                            <option value="itr">Income Tax Return</option>
+                            <option value="tax-notice">Income Tax / GST Notice</option>
+                            <option value="dsc">Digital Signature (DSC)</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirement..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-glow btn-full">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-mark">
+                            <span>P</span>
+                            <span>P</span>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">Patel Parth & Co</span>
+                            <span class="logo-sub">Chartered Accountants</span>
+                        </div>
+                    </a>
+                    <p>Your trusted partner for all accounting, taxation, and business compliance needs. We simplify finances so you can focus on what matters most — your business.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/918320525187" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                    <a href="#why-us">Why Choose Us</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <a href="#services">GST Return Filing</a>
+                    <a href="#services">GST Registration</a>
+                    <a href="#services">MSME Certificate</a>
+                    <a href="#services">Income Tax Return</a>
+                    <a href="#services">Tax Notice Handling</a>
+                    <a href="#services">Digital Signature</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact-row">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:+918320525187">+91 83205 25187</a>
+                    </div>
+                    <div class="footer-contact-row">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:patelparthandco@gmail.com">patelparthandco@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-row">
+                        <i class="fas fa-clock"></i>
+                        <span>Mon - Sat: 10 AM - 7 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Patel Parth & Co. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for excellence</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/918320525187" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat with us</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
