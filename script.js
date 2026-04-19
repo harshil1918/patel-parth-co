@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 1. Send email via Web3Forms
                 const emailData = {
                     access_key: WEB3FORMS_KEY,
-                    subject: `New Enquiry from ${name} — Patel Parth & Co`,
-                    from_name: 'Patel Parth & Co Website',
+                    subject: `New Enquiry from ${name} — PATEL PARTH & CO`,
+                    from_name: 'PATEL PARTH & CO Website',
                     name: name,
                     phone: phone,
                     email: email,

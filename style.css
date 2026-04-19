@@ -169,16 +169,16 @@ ul { list-style: none; }
     left: 0;
     right: 0;
     z-index: 1000;
-    background: transparent;
+    background: var(--gradient-hero);
     transition: all var(--transition);
     padding: 18px 0;
 }
 
 #navbar.scrolled {
-    background: rgba(250, 251, 253, 0.92);
+    background: var(--gradient-hero);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     padding: 12px 0;
 }
 
@@ -234,12 +234,12 @@ ul { list-style: none; }
     font-weight: 700;
     font-size: 1.05rem;
     line-height: 1.2;
-    color: var(--text);
+    color: #FFFFFF;
 }
 
 .logo-sub {
     font-size: 0.65rem;
-    color: var(--text-light);
+    color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -256,15 +256,15 @@ ul { list-style: none; }
     border-radius: var(--radius-full);
     font-size: 0.88rem;
     font-weight: 500;
-    color: var(--text-mid);
+    color: rgba(255, 255, 255, 0.75);
     transition: all var(--transition);
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--text);
-    background: var(--bg-alt);
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .nav-link.active::after {
@@ -318,7 +318,7 @@ ul { list-style: none; }
 .hamburger span {
     width: 24px;
     height: 2.5px;
-    background: var(--text);
+    background: #FFFFFF;
     border-radius: 2px;
     transition: all var(--transition);
 }
