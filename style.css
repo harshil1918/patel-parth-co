@@ -1984,13 +1984,15 @@ ul { list-style: none; }
         width: 75%;
         max-width: 320px;
         height: 100vh;
-        background: var(--bg-card);
+        height: 100dvh;
+        background: #FFFFFF;
         flex-direction: column;
         padding: 100px 32px 32px;
-        box-shadow: var(--shadow-lg);
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.3);
         transition: right 0.4s var(--ease);
-        z-index: 998;
+        z-index: 1001;
         gap: 4px;
+        overflow-y: auto;
     }
 
     .nav-menu.active { right: 0; }
@@ -2008,7 +2010,7 @@ ul { list-style: none; }
         background: rgba(232, 168, 56, 0.08);
     }
 
-    .hamburger { display: flex; z-index: 999; }
+    .hamburger { display: flex; z-index: 1002; position: relative; }
     .nav-cta span { display: none; }
     .nav-cta { width: 42px; height: 42px; padding: 0; justify-content: center; border-radius: var(--radius-sm); }
 
