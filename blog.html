@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | PATEL PARTH & CO</title>
+    <meta name="description" content="Expert tax insights, GST updates, and financial tips from PATEL PARTH & CO — Chartered Accountants.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 28px;
+            margin-top: 48px;
+        }
+        .blog-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+            border-color: rgba(232, 168, 56, 0.3);
+        }
+        .blog-card-body {
+            padding: 28px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-category {
+            display: inline-block;
+            background: rgba(232, 168, 56, 0.12);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 14px;
+        }
+        .blog-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .blog-card p {
+            color: var(--text-mid);
+            font-size: 0.92rem;
+            line-height: 1.7;
+            flex: 1;
+            margin-bottom: 20px;
+        }
+        .blog-card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 28px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-alt);
+        }
+        .blog-date {
+            color: var(--text-light);
+            font-size: 0.82rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .blog-read-more {
+            color: var(--accent);
+            font-size: 0.88rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .blog-read-more:hover { gap: 10px; }
+        .blog-empty {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-mid);
+        }
+        .blog-empty i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+            display: block;
+        }
+        .blog-empty h3 {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            color: var(--text);
+            margin-bottom: 8px;
+        }
+        @media (max-width: 768px) {
+            .blog-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-ring">
+            <div class="loader-inner"></div>
+            <span class="loader-text">PP&Co</span>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <header id="navbar" class="scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-mark"><span>P</span><span>P</span></div>
+                <div class="logo-text">
+                    <span class="logo-name">PATEL PARTH & CO</span>
+                    <span class="logo-sub">Chartered Accountants</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#why-us" class="nav-link">Why Us</a>
+                <a href="index.html#testimonials" class="nav-link">Reviews</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="tel:+918320525187" class="nav-cta">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content" data-animate="fade-up">
+                <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Home</a>
+                <div class="tag-label">Insights & Updates</div>
+                <h1>Our <span class="gradient-text">Blog</span></h1>
+                <p>Tax tips, GST updates & financial insights for your business</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Listing -->
+    <section class="section" style="padding-top: 60px;">
+        <div class="container">
+            <div id="blogGrid" class="blog-grid">
+                <!-- Posts loaded by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 PATEL PARTH & CO. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/918320525187" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="wa-tooltip">Chat with us</span>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        fetch('/data/posts.json')
+            .then(res => res.json())
+            .then(data => {
+                const posts = data.posts || [];
+                const grid = document.getElementById('blogGrid');
+
+                if (posts.length === 0) {
+                    grid.innerHTML = `
+                        <div class="blog-empty" style="grid-column:1/-1">
+                            <i class="fas fa-pen-nib"></i>
+                            <h3>Blog coming soon</h3>
+                            <p>Our team is working on insightful articles. Check back soon!</p>
+                        </div>`;
+                    return;
+                }
+
+                const sorted = posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                grid.innerHTML = sorted.map(post => `
+                    <div class="blog-card">
+                        <div class="blog-card-body">
+                            <span class="blog-category">${post.category}</span>
+                            <h3>${post.title}</h3>
+                            <p>${post.excerpt}</p>
+                            <a href="post.html?slug=${post.slug}" class="blog-read-more">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="blog-card-footer">
+                            <span class="blog-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                ${new Date(post.date).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}
+                            </span>
+                        </div>
+                    </div>
+                `).join('');
+            })
+            .catch(() => {
+                document.getElementById('blogGrid').innerHTML = `
+                    <div class="blog-empty" style="grid-column:1/-1">
+                        <i class="fas fa-pen-nib"></i>
+                        <h3>Blog coming soon</h3>
+                        <p>Our team is working on insightful articles. Check back soon!</p>
+                    </div>`;
+            });
+    </script>
+</body>
+</html>
