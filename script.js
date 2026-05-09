@@ -236,12 +236,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 // 2. Save to Google Sheets
                 const sheetData = { name, phone, email, service, message, date: new Date().toLocaleString('en-IN') };
 
+                const params = new URLSearchParams(sheetData);
                 const sheetPromise = GOOGLE_SHEET_URL !== 'YOUR_GOOGLE_SHEET_URL_HERE'
-                    ? fetch(GOOGLE_SHEET_URL, {
-                        method: 'POST',
-                        mode: 'no-cors',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(sheetData)
+                    ? fetch(GOOGLE_SHEET_URL + '?' + params.toString(), {
+                        method: 'GET',
+                        mode: 'no-cors'
                     })
                     : Promise.resolve();
 
